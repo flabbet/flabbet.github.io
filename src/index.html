@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krzysztof Krysiński - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?;"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/topNavController.js"></script>
+    <script src="js/typeWriter.js"></script>
+    <script src="js/projects.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#aboutMe" class="active">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="toogleResponsive();">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div id="aboutMe">
+            <div class="contentBlock">
+                <h1>
+                    <span style="color: #00FF2A">></span><span id="typeWriteHeader"> Hi, I'm Krzysztof</span><span class="blink">|</span>
+                </h1>
+    
+                <div class="card" style="background-color: transparent; line-height: 45px; font-weight: lighter;">
+                    I'm a <span id="ageSpan"></span> year old software developer.<br /><br />
+                    My main fields are <span style="color: #A1E727;">desktop</span>, <span style="color: #A1E727;">game</span>
+                    and <span style="color: #A1E727;">mobile</span> development. <br />
+                    I am <span style="color: #A1E727;">Google Code-In</span> <span style="color: #A1E727;">2018</span>
+                    finalist,
+                    <span style="color: #A1E727;">Google Code-In 2019</span> Runner up<br />
+                    and winner of few local contests.<br /><br />
+                    <span class="underlinedText" style="border-color: #9D6ED8;">C#</span> and 
+                    <span class="underlinedText" style="border-color: #189F20;">.NET</span> are my primary technologies.<br /><br />
+                    I love books, music and archery.
+                </div>
+            </div>
+            <div class="contentBlock" id="meAndLinksContentBlock">
+                <div id="meAndLinks">
+                    <div id="me">
+                        <img src="images/me6.jpg"/>
+                    </div>
+                    <br />
+                    <div id="links">
+                        <a href="https://github.com/flabbet" target="_blank">
+                            <div class="link">
+                                <img src="images/GitHub-Mark.png" />
+                                <span>Github</span>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/flabbet" target="_blank">
+                            <div class="link">
+                                <img src="images/Twitter_Logo_Blue.png" />
+                                <span>Twitter</span>
+                            </div>
+                        </a>
+                        <a href="https://stackoverflow.com/users/9146296/flabbet" target="_blank">
+                            <div class="link">
+                                <img src="images/so-icon.png" />
+                                <span>Stack Overflow</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="contactMe">
+                    Contact me at <br /> <span style="color:white;">krysinskikrzysztof123@gmail.com</span>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    <div id="projects">
+        <div class="titleText">
+            <span>My projects</span>
+        </div>
+        <div id="projectsContainer">
+
+        </div>
+        <div id="moreInfo">
+            Check out more on <a href="https://github.com/flabbet" target="_blank">GitHub <img src="images/GitHub-Mark.png" /></a>
+        </div>
+    </div>
+    </div>
+
+    <footer style="background-color: #222; padding: 15px;">
+        <div class="container">
+            &copy; 2020 - Portfolio - Krysiński Krzysztof
+        </div>
+    </footer>
+    <script src="js/cardGenerator.js"></script>
+    <script src="js/ageCalculator.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@ const projects = [
       lang: 'JavaScript',
       langColor: '#F7E018',
       description: 'My personal website.',
-      link: 'https://github.com/flabbet/Portfolio',
+      link: 'https://github.com/flabbet/flabbet.github.io',
       technologies: [
         {
           name: 'JavaScript',

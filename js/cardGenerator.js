@@ -29,7 +29,7 @@ function generateCard(project){
             </div>
             <a href="${project.link}" target="_blank">
                 <div class="project-link">
-                    <img src="images/${project.image === undefined ? "Github-Mark.png": project.image}" />
+                    <img src="images/${project.image === undefined ? "GitHub-Mark.png": project.image}" />
                 </div>
             </a>
         </div>

@@ -286,10 +286,46 @@ h1 {
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 460px) {    
+
     .card {
         width: 300px;
+    }    
+
+    .project-card {
+        font-size: 30px;
     }
+
+    .project-card-body {
+        font-size: 16px;
+    }
+
+    .dot{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 48px;
+    }
+
+    .link{
+        font-size: 24px;
+    }
+
+    #contactMe{
+        font-size: 16px;
+    }
+
+    #infoAboutMe{
+        font-size: 22px;
+    }
+
+    .card {
+        width: 250px;
+    }    
 
     .project-card {
         font-size: 30px;

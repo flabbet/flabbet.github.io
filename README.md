@@ -1,3 +1,3 @@
 # flabbet.github.io
 
-My personal website with projects and contact info. Written using HTML/CSS/JS
+My [personal website](https://krysinski.me/) with projects and contact info. Written using HTML/CSS/JS

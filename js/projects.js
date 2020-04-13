@@ -97,24 +97,17 @@ const projects = [
       ]
     },
     {
-      projectName: 'Who is Who',
-      lang: 'Dart',
-      langColor: '#00B4AB',
-      description: 'A simple flashcards based learning game.',
-      link: 'https://github.com/flabbet/WhoIsWho-Game',
+      projectName: 'Prepare to plague',
+      lang: 'C#',
+      langColor: '#9D6ED8',
+      description: 'A small turn-based strategy game.',
+      link: 'https://flabbet.itch.io/prepare-to-plague',
+      image: 'itchio.png',
       technologies: [
         {
-          name: 'Flutter',
-          color: '#52C0F1'
-        },
-        {
-          name: 'Firebase',
-          color: '#F5820C'
-        },
-        {
-          name: 'Google APIs',
-          color: '#2A9D49'
-        }
+          name: "Unity",
+          color: "#000"
+      } 
       ]
     }
   ]

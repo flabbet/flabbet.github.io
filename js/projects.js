@@ -18,15 +18,23 @@ const projects = [
       ]
     },
     {
-      projectName: 'Emergency Resources',
+      projectName: 'SwagLyrics GUI',
       lang: 'C#',
       langColor: '#9D6ED8',
-      description: 'A life-saving Rimworld mod.',
-      link: 'https://github.com/flabbet/-Rimworld-Mod-Emergency-Resources',
+      description: 'A real-time lyrics fetching application.',
+      link: 'https://github.com/SwagLyrics/SwagLyricsGUI',
       technologies: [
         {
-          name: 'Rimworld Core',
-          color: '#717171'
+          name: 'Python',
+          color: '#3475A9',
+        },
+        {
+          name: 'Avalonia',
+          color: '#8c45ab'
+        },
+        {
+          name: 'SwagLyrics',
+          color: '#00A470'
         }
       ]
     },

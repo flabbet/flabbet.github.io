@@ -8,7 +8,7 @@ const projects = [
       link: 'https://github.com/flabbet/PixiEditor',
       technologies: [
         {
-          name: '.NET Core 3',
+          name: '.NET 5',
           color: '#189F20'
         },
         {

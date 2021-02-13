@@ -162,7 +162,8 @@ h1 {
     .link img {
         width: 45px;
         margin-right: 15px;
-        -webkit-transition : -webkit-filter 0.3s linear;
+        transition: filter 0.3s linear;
+        -webkit-transition: -webkit-filter 0.3s linear;
         filter: brightness(0) invert(1);
     }
 
@@ -273,9 +274,8 @@ h1 {
     display: inline-block;
 }
 
-.titleText {
+h2 {
     font-size: 72px;
-    padding-bottom: 75px;
     padding-top: 75px;
     color: #ffa500;
 }

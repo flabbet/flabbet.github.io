@@ -315,6 +315,17 @@ h2 {
     .card {
         margin: 0;
     }
+    
+    .skillCol{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .skillCol-title{
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 460px) {    

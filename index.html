@@ -11,6 +11,7 @@
     <script src="js/topNavController.js"></script>
     <script src="js/typeWriter.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="flabbet"
         data-description="Support me on Buy me a coffee!"
@@ -33,6 +34,7 @@
         <div class="topnav" id="myTopnav">
             <a href="#aboutMe" class="active">About me</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="javascript:void(0);" class="icon" onclick="toogleResponsive();">
                 <i class="fa fa-bars"></i>
             </a>
@@ -61,11 +63,11 @@
                     technologies.<br /><br />
                     I love books, music and archery.
                 </div>
-            </div>
+            </div>            
             <div class="contentBlock" id="meAndLinksContentBlock">
                 <div id="meAndLinks">
                     <div id="me">
-                        <img src="images/me6.jpg" />
+                        <img src="images/photo.jpg" />
                     </div>
                     <br />
                     <div id="links">
@@ -87,6 +89,13 @@
                                 <span>Stack Overflow</span>
                             </div>
                         </a>
+                        <a href="https://www.linkedin.com/in/krysinski-dev/" target="_blank">
+                            <div class="link">
+                                <img src="images/LI-In-Bug.png"
+                                    alt="Krzysztof Krysiński's DEV Profile">
+                                <span>LinekdIn</span>
+                            </div>
+                        </a>
                         <a href="https://dev.to/flabbet" target="_blank">
                             <div class="link">
                                 <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
@@ -100,12 +109,23 @@
                     Contact me at <br /> <span style="color:white;"><a
                             href="mailto:krzysztof@krysinski.me">krzysztof@krysinski.me</a></span>
                 </div>
-            </div>
-            <div style="clear:both;"></div>
-        </div>
+            </div>            
+            <div style="clear:both;"></div>   
+        </div>    
+        <div style="overflow: hidden;">
+            <svg
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 120"
+              xmlns="http://www.w3.org/2000/svg"
+              style="fill: #222; width: 100%; height: 67px; transform: rotate(180deg) scaleX(-1);"
+            >
+              <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
+            </svg>
+          </div>
+    <div style="background-color: #222; height: 10px; width: 100%; margin: -5px"></div>
         <div id="projects">
             <div class="titleText">
-                <h2>My projects</h2>
+                <h2>Main projects</h2>
             </div>
             <div id="projectsContainer">
 
@@ -113,17 +133,58 @@
             <div id="moreInfo">
                 Check out more on <a href="https://github.com/flabbet" target="_blank">GitHub <img
                         src="images/GitHub-Mark.png" /></a>
+            </div>     
+            <div style="overflow: hidden;">
+                <svg
+                  preserveAspectRatio="none"
+                  viewBox="0 0 1200 120"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="fill: #1c1c1c; width: 100%; height: 67px; transform: rotate(180deg);"
+                >
+                  <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
+                </svg>
+              </div>       
+        </div>                
+    </div>
+    <div style="background-color: #1c1c1c; height: 10px; width: 100%; margin: -5px"></div>
+    <div class="skills" id="skills">      
+        <div class="titleText">
+            <h2>Skills</h2>
+        </div>
+        <div class="skillCol">
+            <div class="skillCol-title">
+                <h3>Languages</h3>
+            </div>
+            <div class="skillCol-items"></div>
+            </div>
+        </div>
+        <div class="skillCol">
+            <div class="skillCol-title">
+                <h3>Technologies</h3>
+            </div>
+            <div class="skillCol-items">
+            </div>
+        </div>
+        <div class="skillCol">
+            <div class="skillCol-title">
+                <h3>Other</h3>
+            </div>
+            <div class="skillCol-items">
+ 
             </div>
         </div>
     </div>
 
+    <div style="clear: both"></div>
+
     <footer style="background-color: #222; padding: 15px;">
         <div class="container">
-            &copy; 2020 - Portfolio - Krysiński Krzysztof
+            &copy; 2021 - Portfolio - Krysiński Krzysztof
         </div>
     </footer>
     <!--flag{this_is_not_a_ctf}-->
     <script src="js/cardGenerator.js"></script>
+    <script src="js/skillsGenerator.js"></script>
     <script src="js/ageCalculator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>

@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: krysinski.me
+Token: 9cd7dacd87f654e28e7c054756e7108b6fe8b68425b87833757a7fd1fb02863a

@@ -18,6 +18,25 @@ const projects = [
       ]
     },
     {
+      projectName: 'PixiEditor.net',
+      lang: 'TypeScript',
+      langColor: '#2D79C7',
+      description: 'Official PixiEditor website.',
+      link: 'https://pixieditor.net',
+      image: 'web-icon.png',
+      technologies: [
+        {
+          name: 'Docusaurus',
+          color: '#3ECC5F'
+        },
+        {
+          name: 'React',
+          color: '#61DBFB',
+          fontColor: "#2A2C2E"
+        },      
+      ]
+    },
+    {
       projectName: 'SwagLyrics GUI',
       lang: 'C#',
       langColor: '#9D6ED8',
@@ -78,29 +97,6 @@ const projects = [
         {
           name: 'SwagLyrics',
           color: '#00A470'
-        }
-      ]
-    },
-    {
-      projectName: 'PCForLife.pl',
-      lang: 'JavaScript',
-      langColor: '#F7E018',
-      description: 'Website made for PCForLife.',
-      link: 'http://pcforlife.pl/',
-      image: 'web-icon.png',
-      technologies: [
-        {
-          name: 'JavaScript',
-          color: '#F7E018',
-          fontColor: '#000'
-        },
-        {
-          name: 'HTML',
-          color: '#D83B01'
-        },
-        {
-          name: 'CSS',
-          color: '#1B84C2'
         }
       ]
     },

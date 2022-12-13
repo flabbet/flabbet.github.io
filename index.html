@@ -52,9 +52,8 @@
                 <div class="card" id="infoAboutMe"
                     style="background-color: transparent; line-height: 45px; font-weight: lighter;">
                     I'm a <span id="ageSpan"></span> year old software developer.<br /><br />
-                    My main fields are <span style="color: #A1E727;">desktop</span>, <span
-                        style="color: #A1E727;">game</span>
-                    and <span style="color: #A1E727;">mobile</span> development. <br /> <br /> 
+                    My main fields are <span style="color: #A1E727;">desktop</span> and <span
+                        style="color: #A1E727;">game</span> development <br /> <br /> 
                     I am the creator and maintainer of <a class="pixiEditorLink" href="https://github.com/PixiEditor" alt="PixiEditor GitHub">PixiEditor Organization</a>, 
                     <span style="color: #A1E727;">Google Code-In</span> <span style="color: #A1E727;">2018</span>
                     finalist and
@@ -180,7 +179,7 @@
 
     <footer style="background-color: #222; padding: 15px;">
         <div class="container">
-            &copy; 2021 - Portfolio - Krysiński Krzysztof
+            &copy; <span id="year"></span> - Portfolio - Krysiński Krzysztof
         </div>
     </footer>
     <!--flag{this_is_not_a_ctf}-->
@@ -204,6 +203,8 @@ window.cookieconsent.initialise({
     "message": "This website uses cookies to ensure you get the best experience on my website."
   }
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 </body>
 

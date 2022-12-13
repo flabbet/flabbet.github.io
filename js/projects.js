@@ -8,7 +8,7 @@ const projects = [
       link: 'https://github.com/flabbet/PixiEditor',
       technologies: [
         {
-          name: '.NET 5',
+          name: '.NET 7',
           color: '#189F20'
         },
         {
@@ -37,23 +37,16 @@ const projects = [
       ]
     },
     {
-      projectName: 'SwagLyrics GUI',
+      projectName: 'Space Tail',
       lang: 'C#',
       langColor: '#9D6ED8',
-      description: 'A real-time lyrics fetching application.',
-      link: 'https://github.com/SwagLyrics/SwagLyricsGUI',
+      description: 'A 2.5D adventure platformer.',
+      link: 'https://store.steampowered.com/app/1975660/Space_Tail_Every_Journey_Leads_Home/',
+      image: 'steam.svg',
       technologies: [
         {
-          name: 'Python',
-          color: '#3475A9',
-        },
-        {
-          name: 'Avalonia',
-          color: '#8c45ab'
-        },
-        {
-          name: 'SwagLyrics',
-          color: '#00A470'
+          name: 'Unity',
+          color: '#000',
         }
       ]
     },
@@ -80,23 +73,19 @@ const projects = [
       ]
     },
     {
-      projectName: 'SwagLyrics-Discord-Bot',
-      lang: 'Python',
-      langColor: '#3475A9',
-      description: 'A smart lyrics Discord bot.',
-      link: 'https://github.com/SwagLyrics/SwagLyrics-discord-bot',
+      projectName: 'MarketOne',
+      lang: 'C#',
+      langColor: '#9d6ed8',
+      description: 'Metaverse marketplace.',
+      link: 'https://www.marketone.xyz/',
       technologies: [
         {
-          name: 'Discord.py',
-          color: '#7289DA'
+          name: 'Unity',
+          color: '#000'
         },
         {
-          name: 'Flask',
-          color: '#FFA500'
-        },
-        {
-          name: 'SwagLyrics',
-          color: '#00A470'
+          name: 'Google Cloud',
+          color: '#e34133'
         }
       ]
     },

@@ -242,7 +242,7 @@ a.inline-block.leading-5.pl-12{
 	display: block;
 	width: 400px;
 	height: 400px;
-	background: #9676c740;
+	background: #7a56b340;
 	bottom: -400px;
 	right: -300px;
 	position: fixed;
@@ -254,7 +254,7 @@ a.inline-block.leading-5.pl-12{
 
 
 .blur-circle {
-	background-color: rgba(87, 253, 228, 0.29);
+	background-color: rgba(122, 86, 179, 0.25);
 	position: absolute;
 	width: 200px;
 	height: 200px;
@@ -286,7 +286,7 @@ a.inline-block.leading-5.pl-12{
 	display: block;
 	width: 500px;
 	height: 500px;
-	background: #50fd8f25 !important;
+	background: #7a56b325 !important;
 	bottom: -150px;
 	right: -150px;
 	position: absolute;

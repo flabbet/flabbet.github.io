@@ -94,9 +94,11 @@ import Heading from "../components/ui/Heading.astro";
         >
           <div class="white flex items-center gap-4">
             <div
-              aria-label="Photo of Fernando Aldair López Ponce (EFEELE) for the blog"
+              aria-label="Author profile"
               class="size-10 bg-cover bg-center rounded-full drop-shadow-lg"
-              style="background-image: url(/images/efeeleprofile.webp);"
+              style={{
+                backgroundImage: `url(${frontmatter.authorImage})`,
+              }}
             >
             </div>
             <a

@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/blog/Hero.astro";
+import Tags from "../components/blog/Tags.astro";
+import ListPosts from "../components/blog/ListPosts.astro";
+const pageTitle = "Unhinged Cogs";
+const description = "I can make it better - a blog about remaking those little and (way too) big things in programming world.";
+const ogimage = {
+  url: "/images/imagedefault.webp",
+  alt: "Image containing a Unhinged Cogs blog logo.",
+};
+import Heading from "../components/ui/Heading.astro";
+---
+
+<Layout  pageTitle={pageTitle} description={description} ogimage={ogimage}>
+   
+    <Hero />
+    <Tags />
+    <div class="px-8 max-sm:px-4">
+        <ListPosts />
+    </div>
+
+</Layout>

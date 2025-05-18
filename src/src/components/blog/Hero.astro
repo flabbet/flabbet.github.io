@@ -1,0 +1,18 @@
+---
+import Button from "../ui/Button.astro";
+import LastPost from "../blog/LastPost.astro";
+import Languages from "../blog/Languages.astro";
+import { Icon } from "astro-icon/components";
+import Heading from "../ui/Heading.astro";
+
+---
+
+<section class="py-8 px-8  max-sm:px-4 max-sm:py-2">
+  <div
+    class="grid md:grid-cols-4 md:grid-rows-2 gap-4 max-sm:gap-3 grid-cols-2 grid-rows-4 max-w-7xl mx-auto max-md:h-[80vh] max-sm:h-auto max-sm:grid-rows-[auto_200px_auto_auto] max-xl:h-[550px] xl:h-[700px]"
+  >
+    <div class="col-span-2 row-span-2 md:col-start-1 md:row-start-1 bg-conic/[from_var(--border-angle)] dark:from-mint-200/30 dark:via-mint-500 dark:to-mint-200/20 from-mint-300/30 via-mint-500 to-mint-300/20  from-20% to-80% animate-rotate-border rounded-2xl p-[.2rem]">
+      <LastPost />
+    </div>
+  </div>
+</section>

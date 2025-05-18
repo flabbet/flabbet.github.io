@@ -5,11 +5,11 @@ import Footer from "../components/layout/Footer.astro";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 const {
   pageTitle = "Unhinged Cogs",
-  description = "",
+  description = "I can make it better - a blog about remaking those little and (way too) big things in programming world.",
   ogimage = {
-    url: "/images/imagedefault.webp",
-    alt: "Default image of EFEELE",
-  },
+  url: "/images/imagedefault.webp",
+  alt: "Image containing a Unhinged Cogs blog logo.",
+}
 } = Astro.props;
 
 const siteUrl = new URL(Astro.url).origin;

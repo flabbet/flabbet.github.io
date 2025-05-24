@@ -22,7 +22,7 @@ const SEO = {
 };
 
 
-const twitterimage = `${siteUrl}${ogimage.url}`;
+const fullImage = `${siteUrl}${ogimage.url}`;
 ---
 
 <html
@@ -50,7 +50,7 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogimage.url} />
+    <meta property="og:image" content={fullImage} />
     <meta property="og:image:alt" content={ogimage.alt} />
     <meta property="og:url" content={SEO.url} />
     <meta property="og:type" content="website" />
@@ -62,7 +62,7 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={twitterimage} />
+    <meta name="twitter:image" content={fullImage} />
     <meta name="twitter:image:alt" content={ogimage.alt} />
     <meta name="twitter:site" content={SEO.twitter} />
   

@@ -5,14 +5,16 @@ import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap"
 import icon from "astro-icon";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
-	site: "https://unhingedcogs.com",
+    site: "https://unhingedcogs.com",
   integrations: [preact(), icon(), sitemap({
     filter: (page) =>
       !page.includes("/blog/tags") &&
       !page.includes("/blog/techs"),
-  }),],
+  }), mdx()],
 
   vite: {
     plugins: [tailwindcss()],

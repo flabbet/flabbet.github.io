@@ -1,0 +1,121 @@
+---
+layout: /src/layouts/MarkdownPostLayout.astro
+title: From bare window to 2D physics - Part 1 Intro
+author: Krzysztof Krysiński
+authorImage: "https://avatars.githubusercontent.com/u/25402427?v=4"
+description: "Did you ever wonder how 2D rendering actually works? Well this is what I'll try to cog out in this series."
+image:
+  url: "/images/posts/window-to-physics-part1.webp"
+  alt: "Cover image of the blog post"
+pubDate: 2025-05-31
+tags:
+  [
+    "2d", "rendering", "building-blocks"
+  ]
+languages: []
+---
+
+import ClickTrophy from "../../../components/post-specific/ClickTrophy.astro";
+
+> [!warning] 
+> _You won't find ChatGPT's gibber jabber sugary text here. Expect occasional satire, hand-crafted insults, and casual cursing. Enjoy_
+
+<br/>
+
+There is a time in a man's life when he needs to make a decision. Use a game engine or build your own.
+
+I would say it's a very important decision. You see, the temptation to connect all the little pieces and make them work exactly as you wish, up to the smallest detail is undeniable.
+
+I would say it's an important decision, but I won't. Because it's not.
+You see, there is no real difference. But to see that, we need to rephrase the question.
+
+"Should I just not finish the game or not finish the engine to the state where I can even start making a game"
+
+See? No difference. In either case, the thing goes to the "unfinished projects, but I'll come back to them one day, I promise!1!1!1" folder.
+
+> but flabbet
+
+WHAT? Oh, I am so sorry, did I forget about that portfolio website made from a pre-made template, in which you have succesfully changed the photo and the colors with ChatGPT help?
+You're right, here is your trophy. 
+
+Click to get it.
+
+<br/>
+
+<ClickTrophy />
+
+<br/>
+
+Okay, Where was I?
+
+Ah, the illusion of choice.
+
+
+In this series, we'll be doing the harder one, making the game engine.
+
+## Let the rabbit hole begin
+
+Well, not exactly, not a full blown generic game engine. More like an engineless 2D game. 
+
+We'll go through:
+
+### Theoretical funsies, that will not go to prod
+
+Such as:
+
+1. Creating a barebones window with OS sys-calls (Windows, Linux, MacOS)
+2. Rendering primitive 2D shapes
+3. Listening to input (mouse, keyboard), also barebones
+
+> What do you mean by "theoretical funsies, that will not go to prod?"
+
+For the love of God. Just because this is **Unhinged Cogs** and we'll do these things, it doesn't mean you actually should do it in real-life projects.
+
+This is where the second part comes in.
+
+### A breakdown of more realistic architecture for a 2D rendering framework
+
+Now, this is a fun thing and not an easy one.
+
+So, in this list you'll find:
+
+1. GLFW/SDL - Why even Valve doesn't bother dealing with OS stuff
+2. Design of a flexible graphics pipeline so it works across all major OSes and a browser.
+3. Skia, because you don't want to deal with this low-level shit yourself.
+
+Then, after that, a **very** exciting part:
+
+### Actually using it to make a simple 2D physics engine
+
+While I take some responsibility for the first 2 parts, meaning that I actually know what I am talking about. The third part is 
+going to be a wild ride, where most likely, I am doing stupid shit that somehow works. Starting with reinventing 2D collisions by using
+Skia, a rendering library.
+
+And you know what? This is the best thing about all of this, all of programming. You explore these absolutely solved problems, knock the domino and ask a bunch of annoying questions. Do a much worse job than
+using ready-made solutions. But none of it matters, because in the worst case, you'll fail and learn way more than expected and in the best, you'll make something great, something **you are proud of**.
+
+
+Welcome to **Unhinged Cogs** ladies and gentlemen!
+
+
+### What *not* to expect from this series
+
+Now some important foreword before we begin.
+
+It's not a tutorial nor a guide on how to make a production ready framework for a game engine. It will be more like an adventure that might teach you something.
+
+
+### Origin of this series
+
+Generally, I wanted to write a cell evolution simulator from scratch. I wanted to do it by utilizing [Drawie](https://github.com/PixiEditor/Drawie) - a library I wrote for [PixiEditor](https://github.com/PixiEditor/PixiEditor).
+Basically, it exposes a windowing, input, and rendering high-level api for desktop and browser environments.
+
+But that's just that, no physics no scene, and GameObject logic, nothing. Just a raw window, rendering api and input support.
+
+ Writing physics turned out to be extremely interesting and challenging. I used unconventional methods, very likely worse than traditional approaches but it doesn't matter. It forced me to think. A real challenge instead of copy-pasting algorithms from the internet. 
+
+I hope to pass my excitement and art of reinventing things to you in this series.
+
+Anyway,
+
+UNHINGE THE COGS

@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap"
 import icon from "astro-icon";
 
 import mdx from "@astrojs/mdx";
+import remarkAlert from 'remark-github-blockquote-alert';
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,6 +21,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   markdown: {
+    remarkPlugins: [
+      remarkAlert
+    ],
     shikiConfig: {
       theme: 'github-dark'
     },

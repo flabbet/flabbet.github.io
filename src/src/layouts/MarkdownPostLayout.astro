@@ -8,6 +8,7 @@ import NavArticle from "../components/layout/NavArticle.astro";
 import ListPosts from "../components/blog/ListPosts.astro";
 import NavigationArticles from "../components/layout/NavigationArticles.astro";
 import Share from "../components/ui/Share.astro";
+import "remark-github-blockquote-alert/alert.css";
 const { frontmatter } = Astro.props;
 const currentUrl = `${Astro.site}${Astro.url.pathname}`;
 const tweetText = encodeURIComponent(

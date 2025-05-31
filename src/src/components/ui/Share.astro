@@ -20,22 +20,69 @@ const shareLinks = [
     href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${currentUrl}`)}`,
   },
 ];
+
+const followLinks = [
+  {
+    name: "Folo",
+    icon: "folo",
+    href: "https://app.follow.is/share/feeds/149083849102513152",
+  },
+  {
+    name: "Feedly",
+    icon: 'feedly',
+    href: "https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Funhingedcogs.dev%2Frss"
+  },
+  {
+    name: "RSS",
+    icon: 'rss',
+    href: "https://unhingedcogs.dev/rss"
+  }
+];
 ---
 
-<div class="flex items-center gap-5 text-lg" role="group" aria-label="Share on social media">
-  <span class="text-base font-bold text-blacktext dark:text-white">Share </span>
-  {
-    shareLinks.map((link) => (
-      <a
-        href={link.href}
-        class="bg-blacktext rounded-full p-2"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Share on ${link.name}`}
-        title={`Share on ${link.name}`}
-      >
-        <Icon name={link.icon} />
-      </a>
-    ))
-  }
+<div class="flex flex-col gap-5">
+  <div
+    class="flex items-center gap-5 text-lg"
+    role="group"
+    aria-label="Share on social media"
+  >
+    <span class="text-base font-bold text-blacktext dark:text-white">Share</span
+    >
+    {
+      shareLinks.map((link) => (
+        <a
+          href={link.href}
+          class="bg-blacktext rounded-full p-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Share on ${link.name}`}
+          title={`Share on ${link.name}`}
+        >
+          <Icon name={link.icon} />
+        </a>
+      ))
+    }
+  </div>
+
+  <div
+    class="flex items-center gap-5 text-lg"
+    role="group"
+    aria-label="Follow on RSS aggregators"
+  >
+  <span class="text-base font-bold text-blacktext dark:text-white">Follow</span>
+    {
+      followLinks.map((link) => (
+        <a
+          href={link.href}
+          class="bg-blacktext rounded-full p-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Follow on ${link.name}`}
+          title={`Follow on ${link.name}`}
+        >
+          <Icon name={link.icon} />
+        </a>
+      ))
+    }
+    </div>
 </div>
